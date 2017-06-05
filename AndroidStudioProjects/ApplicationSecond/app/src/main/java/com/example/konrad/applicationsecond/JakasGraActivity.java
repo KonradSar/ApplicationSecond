@@ -67,7 +67,7 @@ public class JakasGraActivity extends AppCompatActivity {
         }
 
     }
-
+//fgf
     private View.OnClickListener myListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {

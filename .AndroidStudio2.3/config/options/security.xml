@@ -1,0 +1,5 @@
+<application>
+  <component name="SSHConnectionSettings">
+    <successfulAuthentication user="git@gitlab.com" method="publickey" />
+  </component>
+</application>
