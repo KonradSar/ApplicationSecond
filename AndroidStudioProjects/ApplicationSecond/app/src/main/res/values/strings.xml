@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">"Niech tego Androida huj szczeli"</string>
+    <string name="PLAY">PLAY</string>
+    <string name="PLAY2">CHANGE</string>
+    <string name="PLAY3">MOVE</string>
+    <string name="PLAY4">ROTATE</string>
+    <string name="PLAY5">BLINK</string>
+    <string name="PLAY6">ZOOM</string>
+
+    <string-array name="nations_array">
+        <item>Africa</item>
+        <item>Australia</item>
+        <item>Bytom</item>
+        <item>Sweden</item>
+    </string-array>
+</resources>

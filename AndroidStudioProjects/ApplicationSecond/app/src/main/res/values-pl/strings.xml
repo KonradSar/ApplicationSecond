@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ApplicationSecond</string>
+    <string name="PLAY">IDZ</string>
+    <string name="PLAY2">ZMIEN</string>
+    <string name="PLAY3">RUSZAJ</string>
+    <string name="PLAY4">OBROC</string>
+    <string name="PLAY5">MIGACZ</string>
+    <string name="PLAY6">POWIEKSZ</string>
+</resources>
