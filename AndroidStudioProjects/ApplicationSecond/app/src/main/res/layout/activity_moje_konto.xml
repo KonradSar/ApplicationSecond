@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        //wpisujemy po to zeby moc zrobic visibility dla czegos:
+        <import type="android.view.View"/>
+        <variable name="uzytkownik" type="com.example.konrad.applicationsecond.Uzytkownik"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{uzytkownik.imie}" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{uzytkownik.nazwisko}" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="@{uzytkownik.matDodatkowe ? View.VISIBLE : View.GONE}"
+            android:text="Materialy są dostępne na dropboxie"
+            />
+        <EditText
+            android:id="@+id/btnAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wie viele jahre alt, Bist Du"
+            android:maxLength="4"
+            android:ems="10"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/btnCountAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Age"/>
+
+
+    </LinearLayout>
+</layout>

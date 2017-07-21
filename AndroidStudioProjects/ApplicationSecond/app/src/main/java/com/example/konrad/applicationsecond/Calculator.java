@@ -1,5 +1,7 @@
 package com.example.konrad.applicationsecond;
 
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -47,11 +49,28 @@ public class Calculator extends AppCompatActivity {
 
     }
 
+//    private BatteryStatusReceiver batteryStatusReceiver;
+//
+//    private IntentFilter intentFilter = new IntentFilter(Intent.ACTION_POWER_DISCONNECTED);
+//
+//    @Override
+//    protected void onResume(){
+//        super.onResume();
+//        registerReceiver(batteryStatusReceiver, intentFilter);
+//    }
+//    @Override
+//    protected void onPause(){
+//        unregisterReceiver(batteryStatusReceiver);
+//        super.onPause();
+//    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
         ButterKnife.bind(this);
+//        batteryStatusReceiver = new BattertStatusReceiver();
     }
 }

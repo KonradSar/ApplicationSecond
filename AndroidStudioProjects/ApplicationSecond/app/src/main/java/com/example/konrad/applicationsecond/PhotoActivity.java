@@ -2,9 +2,11 @@ package com.example.konrad.applicationsecond;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.mylibrary.Photo;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -19,6 +21,15 @@ import static com.example.konrad.applicationsecond.R.id.imageView;
 public class PhotoActivity extends Activity {
     @BindView(R.id.imageView) ImageView photoView;
     @BindView(R.id.button3) Button downloadPhotoButton;
+    @BindView(R.id.floatingbtn) FloatingActionButton findImagebtn;
+
+    @OnClick(R.id.floatingbtn)
+    public void showPhoto2(){
+        Photo photo = new Photo();
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        imageLoader.displayImage(photo.getList(), photoView);
+        Toast.makeText(getApplicationContext(), "WYBRANY OBRAZEK Z PLIKU PHOTO", Toast.LENGTH_SHORT).show();
+    }
 
     @OnClick(R.id.button3)
     public void showPhoto(){

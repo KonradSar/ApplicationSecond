@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.konrad.applicationsecond.ApiWeather.weather">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/temperatureView"
+        android:textAlignment="center"
+        android:textColor="@color/greenish"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/temperatureView"
+        android:id="@+id/secondText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/secondText"
+        android:id="@+id/pressureView"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressureView"
+        android:id="@+id/cityEditText"
+        android:hint="Enter city name"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectBtn"
+        android:layout_below="@+id/cityEditText"
+        android:text="Load City"
+        android:textColor="@color/redish"
+        android:background="@color/greenish"/>
+
+</RelativeLayout>

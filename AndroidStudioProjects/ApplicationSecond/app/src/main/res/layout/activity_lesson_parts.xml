@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.konrad.applicationsecond.LekcjaFragmenty.LessonParts">
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="Button"
+        android:background="@color/caramel"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="Button"
+        android:background="@color/cayene"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:id="@+id/Framelay">
+
+    </FrameLayout>
+</LinearLayout>

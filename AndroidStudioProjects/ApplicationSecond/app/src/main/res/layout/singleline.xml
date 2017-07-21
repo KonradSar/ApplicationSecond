@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dndroid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/but2"
+    android:padding="10dp"
+    android:id="@+id/recyclerViewLay">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:id="@+id/checkbox2"/>
+
+        <TextView
+            android:id="@+id/nazwaZakupu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:text="winogrona czerwone"
+            android:textColor="@color/yellow2"
+            android:textSize="24sp"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/cena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nazwaZakupu"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text=" sztuk"
+            android:textColor="@color/yellow2"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/cena2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/nazwaZakupu"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="200dp"
+            android:layout_marginTop="10dp"
+            android:text=" PLN"
+            android:inputType="numberDecimal"
+            android:textColor="@color/yellow2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/deletebtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/bin2"
+
+
+            />
+
+
+
+
+
+
+</RelativeLayout>

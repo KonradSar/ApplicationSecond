@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -15,27 +17,82 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".secondActivity" />
         <activity android:name=".SmsActivity" />
-        <activity android:name=".PhotoActivity" />
+        <activity
+            android:name=".PhotoActivity"
+            android:label="@string/AAA" />
         <activity android:name=".Alternatives" />
-        <activity android:name=".Calculator">
-
-    </activity>
+        <activity android:name=".Calculator" />
         <activity android:name=".PanstwaActivity" />
-        <activity android:name=".Logowanie"></activity>
-        <activity android:name=".RejestracjaActivity">
+        >
+        <activity android:name=".Logowanie" />
+        <activity android:name=".RejestracjaActivity" />
+        <activity android:name=".JakasGraActivity" />
+        >
+        <activity android:name=".Uzytkownik" />
+        <activity android:name=".MojeKontoActivity" />
+        <activity android:name=".BatteryLevel" />
+        <activity android:name=".ServicesActivity" />
+
+        <service
+            android:name=".ServicesClass"
+            android:enabled="true" />
+
+        <activity android:name=".ToastServiceClass" />
+        <activity android:name=".MusicPhoneClass" />
+        <activity android:name=".MusicPhoneActivity" />
+        <activity
+            android:name=".ColorsActivityFirst"
+            android:theme="@style/AppStyle1" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SecondPanstwa"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name=".SpisTresci" />
+        <activity
+            android:name=".Layouts"
+            android:theme="@style/AppThemeNoActionBar" />
+        >
+        <activity android:name=".MojPagerAdapter" />
+        <activity android:name=".MojTab1Fragment" />
+        <activity android:name=".MojTab2Fragment" />
+        <activity android:name=".RecyclerViewActivity" />
+        >
+        >
+        <activity android:name=".ShopMainView" />
+        <activity
+            android:name=".ShopRecyclerView"
+            android:theme="@style/AppThemeNoActionBar2" />
+        <activity android:name=".AddProduct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".PobieranieDanychZServera" />
+        <activity android:name=".ShoplineActivity" />
+        <activity android:name=".MineKalkulatore" />
+        <activity android:name=".ApiWeather.weather" />
+        <activity android:name=".Weatherapi" />
+        >
+        <activity android:name=".DataBaseActivity"></activity>
+        >
+        <activity android:name="com.example.konrad.TODO.DataBaseActivity2" />
+        <activity android:name="com.example.konrad.TODO.DutiesRecyclerView" />
+        <activity android:name="com.example.konrad.TODO.AddDuty" />
+        <activity android:name="com.example.konrad.TODO.DatePicker" />
+        <activity android:name=".Zarejestrujsie" />
+        <activity
+            android:name=".LekcjaFragmenty.LekcjaFragmenty"
+            android:label="@string/title_activity_lekcja_fragmenty"
+            android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".JakasGraActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LekcjaFragmenty.LessonParts">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>/>
         </activity>
     </application>
 

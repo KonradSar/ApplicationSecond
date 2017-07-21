@@ -40,27 +40,27 @@
             android:hint="Enter Password"
             android:inputType="textPassword" />
     </android.support.design.widget.TextInputLayout>
-        <android.support.v7.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/appCompatButton"
-            android:layout_marginBottom="7dp"
-            android:layout_above="@+id/button6"
-    android:layout_centerHorizontal="true"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button6"
-            android:layout_above="@+id/imageView3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="138dp" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView3"
-            android:background="@drawable/logo"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appCompatButton"
+        android:layout_marginBottom="7dp"
+        android:layout_above="@+id/button6"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:background="@drawable/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
