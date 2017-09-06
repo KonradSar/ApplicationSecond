@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.konrad.applicationsecond.SecondPanstwa"
     android:fitsSystemWindows="true"
-    android:id="@+id/addView">
+    android:id="@+id/addView"
+    >
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -24,10 +25,7 @@
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
             android:fitsSystemWindows="true"
-            app:title="Add Product">
-
-
-
+            app:title="@string/add_prod">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolBar"
@@ -61,7 +59,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             tools:context="com.example.konrad.applicationsecond.AddProduct"
-            android:background="@drawable/desk"
+            android:background="@drawable/descmodified"
             >
 
             <android.support.design.widget.TextInputLayout
@@ -71,6 +69,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:textColorHint="@color/white"
+                android:layout_marginTop="20dp"
                 >
 
                 <EditText
@@ -84,20 +83,30 @@
                     android:inputType="text" />`
 
             </android.support.design.widget.TextInputLayout>
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameOfProductLay"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/i_d_like_to_enter_weight_unit"
+                android:layout_weight="1"
+                android:id="@+id/btnSwitch"/>
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/numberOfProductsLay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="29dp"
-                android:layout_below="@id/nameOfProductLay"
+                android:layout_marginTop="34dp"
+                android:layout_below="@id/btnSwitch"
                 android:textColorHint="@color/white">
                 <EditText
                     android:id="@+id/numberOfProductsEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Number Of Product"
+                    android:hint="@string/enter_number_of_product"
                     android:inputType="number"
                     android:textColor="@color/white"/>
             </android.support.design.widget.TextInputLayout>
@@ -105,7 +114,7 @@
         android:id="@+id/priceLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:layout_below="@id/numberOfProductsLay"
         android:textColorHint="@color/white">
         <EditText
@@ -113,83 +122,120 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Price Of a single Product"
+            android:hint="@string/enter_price_of_a_single_product"
             android:inputType="numberDecimal"
             android:textColor="@color/white"/>
     </android.support.design.widget.TextInputLayout>
-    <Switch
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/priceLay"
-        android:layout_marginTop="40dp"
-        android:text="I'd like to Enter Weight Unit"
-        android:layout_weight="1"
-        android:id="@+id/btnSwitch"/>
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/weightOfProductLay"
-        android:layout_marginTop="45dp"
-        android:layout_below="@id/btnSwitch"
+        android:layout_marginTop="38dp"
+        android:layout_below="@id/priceLay"
         android:textColorHint="@color/white">
         <EditText
             android:id="@+id/weightOfProductEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Weight Of Product in [kg]"
+            android:hint="@string/enter_weight_of_product_in_kg"
             android:inputType="numberDecimal"
             android:textColor="@color/white"/>
 
     </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/priceFor100gramsOfProductLay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/weightOfProductLay"
-        android:textColorHint="@color/white">
-        <EditText
-            android:id="@+id/priceFor100gramsOfProductEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Enter price for 1kg of Product"
-            android:inputType="numberDecimal"
-            android:textColor="@color/white"/>
-    </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/priceFor100gramsOfProductLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/weightOfProductLay"
+                android:textColorHint="@color/white">
+                <EditText
+                    android:id="@+id/priceFor100gramsOfProductEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/enter_price_for_1kg_of_product"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/white"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priceFor100gramsOfProductLay"
+                android:layout_marginTop="42dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/i_d_like_to_enter_additional_info"
+                android:layout_weight="1"
+                android:id="@+id/btnSwitchAddInfo"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/additionalInfoOfProductLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_below="@id/btnSwitchAddInfo"
+                android:textColorHint="@color/white">
+                <EditText
+                    android:id="@+id/additionalInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/enter_additional_info"
+                    android:inputType="text"
+                    android:textColor="@color/white"/>
+            </android.support.design.widget.TextInputLayout>
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/additionalInfoOfProductLay"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/i_would_like_to_add_a_photo"
+                android:layout_weight="1"
+                android:id="@+id/btnAddPhoto"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="50dp"
-                android:layout_below="@id/priceFor100gramsOfProductLay">
+                android:layout_marginTop="47dp"
+                android:layout_below="@id/btnAddPhoto"
+                android:layout_marginBottom="10dp">
+
                 <Button
                     android:id="@+id/btnRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/addproducttolistlift"
+                    android:layout_margin="10dp"
                     />
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:visibility="invisible"/>
+
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/gotoListBtn"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:background="@drawable/gotolistbtnlift"
-                    android:layout_marginBottom="70dp"
+                    android:layout_margin="10dp"
                     />
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clearExternalMemory"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/clear"
+                    android:layout_margin="10dp"/>
+
+
             </LinearLayout>
-
-
-
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 

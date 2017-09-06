@@ -16,6 +16,12 @@ public class Shopping implements Serializable{
     public double priceOf100grams;
     public boolean isDustProductOn;
     public boolean isRedBackgroundColor;
+    public String currencyLabel;
+    public int shoppingIndex;
+    public String photoPath;
+    public boolean isCheckedCheckBox;
+    public double totalUpdatedPriceOfProduct;
+    public float totalPriceOfProductInFloat;
 
 
     public Shopping(String productName, int numberOfProducts, String additionalInfox) {
@@ -24,20 +30,87 @@ public class Shopping implements Serializable{
         this.additionalInfo = additionalInfo;
     }
 
-    public Shopping(String productName, int numberOfProducts, double priceOfASingleProduct, boolean isDustProductOn, boolean isRedBackgroundColor) {
+    public Shopping(String productName, int numberOfProducts, double priceOfASingleProduct, boolean isDustProductOn, boolean isRedBackgroundColor, String currencyLabel, int shoppingIndex, String additionalInfo, String photoPath, boolean isCheckedCheckBox, double totalUpdatedPriceOfProduct, float totalPriceOfProductInFloat) {
         this.productName = productName;
         this.numberOfProducts = numberOfProducts;
         this.priceOfASingleProduct = priceOfASingleProduct;
         this.isDustProductOn = isDustProductOn;
         this.isRedBackgroundColor = isRedBackgroundColor;
+        this.currencyLabel = currencyLabel;
+        this.shoppingIndex = shoppingIndex;
+        this.additionalInfo = additionalInfo;
+        this.photoPath = photoPath;
+        this.isCheckedCheckBox = isCheckedCheckBox;
+        this.totalUpdatedPriceOfProduct = totalUpdatedPriceOfProduct;
+        this.totalPriceOfProductInFloat = totalPriceOfProductInFloat;
+
     }
-    public Shopping(String productName, double weightOfProduct, double priceOf100grams, boolean isDustProductOn, boolean isRedBackgroundColor) {
+
+
+
+    public String getPhotoPath() {
+        return photoPath;
+    }
+
+    public void setPhotoPath(String photoPath) {
+        this.photoPath = photoPath;
+    }
+
+    public Shopping(String productName, double weightOfProduct, double priceOf100grams, boolean isDustProductOn, boolean isRedBackgroundColor, String currencyLabel, int shoppingIndex, String additionalInfo, String photoPath, boolean isCheckedCheckBox, double totalUpdatedPriceOfProduct, float totalPriceOfProductInFloat) {
         this.productName = productName;
         this.weightOfProduct = weightOfProduct;
         this.priceOf100grams = priceOf100grams;
         this.isDustProductOn = isDustProductOn;
         this.isRedBackgroundColor = isRedBackgroundColor;
+        this.currencyLabel = currencyLabel;
+        this.shoppingIndex = shoppingIndex;
+        this.additionalInfo = additionalInfo;
+        this.photoPath = photoPath;
+        this.isCheckedCheckBox = isCheckedCheckBox;
+        this.totalUpdatedPriceOfProduct = totalUpdatedPriceOfProduct;
+        this.totalPriceOfProductInFloat = totalPriceOfProductInFloat;
 
+    }
+
+    public float getTotalPriceOfProductInFloat() {
+        return totalPriceOfProductInFloat;
+    }
+
+    public void setTotalPriceOfProductInFloat(float totalPriceOfProductInFloat) {
+        this.totalPriceOfProductInFloat = totalPriceOfProductInFloat;
+    }
+
+    public double getTotalUpdatedPriceOfProduct() {
+        return totalUpdatedPriceOfProduct;
+    }
+
+    public void setTotalUpdatedPriceOfProduct(double totalUpdatedPriceOfProduct) {
+        this.totalUpdatedPriceOfProduct = totalUpdatedPriceOfProduct;
+    }
+
+    public boolean isCheckedCheckBox() {
+        return isCheckedCheckBox;
+    }
+
+    public void setCheckedCheckBox(boolean checkedCheckBox) {
+        isCheckedCheckBox = checkedCheckBox;
+    }
+
+
+    public int getShoppingIndex() {
+        return shoppingIndex;
+    }
+
+    public void setShoppingIndex(int shoppingIndex) {
+        this.shoppingIndex = shoppingIndex;
+    }
+
+    public String getCurrencyLabel() {
+        return currencyLabel;
+    }
+
+    public void setCurrencyLabel(String currencyLabel) {
+        this.currencyLabel = currencyLabel;
     }
 
     public boolean isDustProductOn() {

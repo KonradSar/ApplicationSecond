@@ -14,7 +14,9 @@ import com.google.gson.Gson;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Konrad on 03.07.2017.
@@ -33,9 +35,37 @@ public class NaszeMetody {
    public static List<Duties> dutiesList = new ArrayList<>();
    public static double counterHelper = 0.00;
    public static double finalResult = 0.00;
+   public static double resultForAnotherCurrency1 = 0.00;
+   public static double resultForAnotherCurrency2 = 0.00;
+   public static double resultForAnotherCurrency3 = 0.00;
+   public static String currencyLabelNumberOne = "";
+   public static String currencyLabelNumberTwo = "";
+   public static String currencyLabelNumberThree = "";
+   public static boolean addThirdCurrencyLabel = false;
+   public static boolean announceLimit = false;
+   public static int counterCurrencyTimes = 0;
+
    public static String kurwajegomac;
-    public static final String LOG_TAG = "KonradApp";
+   public static int isVisiblePLNTotalCosts = 0;
+   public static boolean overrideResultForCurrencyOne = false;
+   public static boolean overrideResultForCurrencyTwo = false;
+   public static boolean overrideResultForCurrencyThree = false;
+   public static final String LOG_TAG = "KonradApp";
    public static int position;
+   public static List<Shopping> shoppingListSecond = new ArrayList<>();
+   public static List<String> menuCurrencies = new ArrayList<>();
+   public static List<Double> exchangeRates = new ArrayList<>();
+   public static Map<String, Double> listForRecycler = new HashMap<String, Double>();
+   public static Map<Float, String> listForDataPieChart = new HashMap<>();
+   public static float[] listBefore = new float[NaszeMetody.shoppingList.size()];
+   public static String[] listBefore2 = new String[NaszeMetody.shoppingList.size()];
+
+
+
+
+
+
+
 
 
 
@@ -86,4 +116,7 @@ public class NaszeMetody {
       }
       return result;
    }
+
+
 }
+

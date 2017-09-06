@@ -13,6 +13,10 @@ public class ShoppingCart {
     public double firstVariable;
     public double secondVariable;
 
+    public ShoppingCart(String productName) {
+        this.productName = productName;
+    }
+
     public ShoppingCart(String productName, int numberOfProducts, double priceOfASingleProduct) {
         this.productName = productName;
         this.numberOfProducts = numberOfProducts;

@@ -1,7 +1,9 @@
 package com.example.konrad.applicationsecond;
 
 import android.os.AsyncTask;
+import android.support.v7.widget.Toolbar;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -12,12 +14,17 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by Konrad on 27.06.2017.
  */
 
 public class Weather extends AsyncTask<Void,Void,WeatherResults> {
     private static String cityName;
+
+
 
     public Weather(String cityName) {
         this.cityName = cityName;
@@ -45,7 +52,11 @@ public class Weather extends AsyncTask<Void,Void,WeatherResults> {
             JSONObject clouds = (JSONObject) jsonObject.get("clouds");
             JSONObject main = (JSONObject) jsonObject.get("main");
             JSONObject wind = (JSONObject) jsonObject.get("wind");
-            WeatherResults weatherResults1 = new WeatherResults(main.get("temp").toString(), main.get("pressure").toString(), wind.get("speed").toString());
+//            JSONArray weatherArray = (JSONArray) jsonObject.get("Weather");
+//            JSONObject description = (JSONObject) weatherArray.get(0);
+            JSONObject sys = (JSONObject) jsonObject.get("sys");
+
+            WeatherResults weatherResults1 = new WeatherResults(main.get("temp").toString(), wind.get("speed").toString(), main.get("pressure").toString(), clouds.get("all").toString(), main.get("humidity").toString(), sys.getString("country"));
             return weatherResults1;
 
 //            Log.d(TAG, "main.get(temp) " + main.get("temp").toString());
@@ -54,6 +65,7 @@ public class Weather extends AsyncTask<Void,Void,WeatherResults> {
 //            JSONArray weatherArray = (JSONArray) jsonObject.get("Weather");
 //            JSONObject o = (JSONObject) weatherArray.get(0);
 //            JSONObject sys = (JSONObject) jsonObject.get("sys");
+
 
         } catch (MalformedURLException e) {
             e.printStackTrace();

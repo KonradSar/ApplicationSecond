@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BATTERY_STATS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -25,8 +26,12 @@
         <activity android:name=".PanstwaActivity" />
         >
         <activity android:name=".Logowanie" />
-        <activity android:name=".RejestracjaActivity" />
-        <activity android:name=".JakasGraActivity" />
+        <activity android:name=".RejestracjaActivity">
+
+        </activity>>
+        <activity android:name=".JakasGraActivity">
+
+        </activity>>
         >
         <activity android:name=".Uzytkownik" />
         <activity android:name=".MojeKontoActivity" />
@@ -58,27 +63,41 @@
         <activity android:name=".MojPagerAdapter" />
         <activity android:name=".MojTab1Fragment" />
         <activity android:name=".MojTab2Fragment" />
-        <activity android:name=".RecyclerViewActivity" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:screenOrientation="portrait" />
         >
         >
         <activity android:name=".ShopMainView" />
         <activity
             android:name=".ShopRecyclerView"
+            android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar2" />
-        <activity android:name=".AddProduct">
+        <activity
+            android:name=".AddProduct"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".PobieranieDanychZServera" />
-        <activity android:name=".ShoplineActivity" />
-        <activity android:name=".MineKalkulatore" />
+        <activity
+            android:name=".ShoplineActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MineKalkulatore">
+
+
+        </activity>>
+
         <activity android:name=".ApiWeather.weather" />
-        <activity android:name=".Weatherapi" />
+        <activity
+            android:name=".Weatherapi"
+            android:screenOrientation="portrait" />
         >
-        <activity android:name=".DataBaseActivity"></activity>
+        <activity android:name=".DataBaseActivity" />
         >
         <activity android:name="com.example.konrad.TODO.DataBaseActivity2" />
         <activity android:name="com.example.konrad.TODO.DutiesRecyclerView" />
@@ -87,13 +106,17 @@
         <activity android:name=".Zarejestrujsie" />
         <activity
             android:name=".LekcjaFragmenty.LekcjaFragmenty"
-            android:label="@string/title_activity_lekcja_fragmenty"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LekcjaFragmenty.LessonParts" />
+        <activity android:name=".ToolbarTest" />
+        <activity android:name=".AsyncTaskActivity" />
+        <activity android:name=".AsyncTaskActivity2" />
+        <activity android:name=".Graphic"
+            android:screenOrientation="portrait">
 
-        </activity>
-        <activity android:name=".LekcjaFragmenty.LessonParts">
 
-        </activity>
+        </activity>>
+
     </application>
 
 </manifest>

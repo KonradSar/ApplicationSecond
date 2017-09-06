@@ -5,7 +5,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
     android:layout_weight="1"
-    android:id="@+id/coordinator">
+    android:id="@+id/coordinator"
+    >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbarView"
@@ -15,39 +16,59 @@
             android:layout_height="?attr/actionBarSize"
             app:layout_collapseMode="pin"
             app:popupTheme="@style/AppTheme.PopupOverlay"
+
+
             >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clearlist"
+                    app:showAsAction="ifRoom|withText"
+                    android:id="@+id/clearListInShopRecycler"
+                    android:foregroundGravity="center_horizontal"
+                    />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     app:showAsAction="ifRoom|withText"
                     android:layout_height="wrap_content"
                     android:src="@drawable/trolleyicon"
                     android:id="@+id/trolleybtn"
-                    android:layout_marginLeft="74dp"
+                    android:foregroundGravity="center_horizontal"
+
+
                     />
-                <ImageButton
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/cleartrolleybtn"
-                    android:src="@drawable/clear_trolley"/>
-                <ImageButton
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content" />
+                    android:src="@drawable/clear_trolley"
+                    android:foregroundGravity="center_horizontal"
+                    />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/readExternalDatabtn"
-                    android:src="@drawable/download_data"/>
-                <ImageButton
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content" />
+                    android:src="@drawable/download_data"
+                    android:foregroundGravity="center_horizontal"
+                    />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/sendMessageBtn"
-                    android:src="@drawable/send_message"/>
+                    android:src="@drawable/send_message"
+                    android:foregroundGravity="center_horizontal"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/goToCharts"
+                    android:src="@drawable/charts"
+                    android:foregroundGravity="center_horizontal"
+                    />
 
         </android.support.v7.widget.Toolbar>
 
@@ -71,10 +92,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="17dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="10dp"
             android:src="@drawable/add"
 
 
