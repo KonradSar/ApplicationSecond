@@ -1,4 +1,18 @@
 <application>
+  <component name="PasswordDatabase">
+    <option name="PASSWORDS">
+      <array>
+        <array>
+          <option value="ef8e92d4cbe38caed42ceaefd5935408d2278cfd6226164d91076a5563665f48" />
+          <option value="247090d2605b313b90ac3eeee00649cf52c4b86fe287f6db0d75c73861d8e150" />
+        </array>
+        <array>
+          <option value="95cb9feb8eee369082f168fea36c1098d2b043c0c9a9d137f530cb39bbb365f0" />
+          <option value="c81a755fd17aaf179e23fb4f515e5466" />
+        </array>
+      </array>
+    </option>
+  </component>
   <component name="SSHConnectionSettings">
     <successfulAuthentication user="git@gitlab.com" method="publickey" />
   </component>

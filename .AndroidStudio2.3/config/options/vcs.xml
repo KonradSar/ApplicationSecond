@@ -6,6 +6,10 @@
           <option name="url" value="https://KonradSar2015@bitbucket.org/KonradSar2015/aplikacjakonradsar.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://github.com/" />
+          <option name="userName" value="Konradooo" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Konrad\AndroidStudioProjects" />
