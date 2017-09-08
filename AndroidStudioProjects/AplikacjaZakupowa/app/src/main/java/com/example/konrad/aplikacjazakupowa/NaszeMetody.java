@@ -4,7 +4,7 @@ import android.content.Context;
 import android.text.Html;
 import android.text.Spanned;
 
-import com.example.konrad.TODO.Duties;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class NaszeMetody {
 
    public static List<Shopping> shoppingList = new ArrayList<>();
    public static List<ShoppingCart> shoppingCart = new ArrayList<>();
-   public static List<Duties> dutiesList = new ArrayList<>();
+
    public static double counterHelper = 0.00;
    public static double finalResult = 0.00;
    public static double resultForAnotherCurrency1 = 0.00;
